@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Advanced Scientific Calculator
 
 A modern, Windows 11-style scientific calculator built with Python and CustomTkinter.
@@ -53,3 +54,7 @@ pip install pyinstaller
 pyinstaller --onefile --windowed --name "ScientificCalculator" main.py
 ```
 The executable will appear in the `dist/` folder.
+=======
+# Advanced-Scientific-Calculator
+Here's a version of about **250 characters** (roughly 100 more than the previous one):  **Advanced Scientific Calculator:** A modern desktop calculator built with Python and CustomTkinter, featuring basic and advanced scientific operations, calculation history, memory functions, theme customization, keyboard shortcuts, and a clean, user-friend
+>>>>>>> a11de6ad41381525ca1e72422e14802902e6695a
