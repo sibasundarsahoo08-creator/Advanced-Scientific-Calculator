@@ -6,7 +6,7 @@ A modern **Advanced Scientific Calculator** built with **Python** and **CustomTk
 ![CustomTkinter](https://img.shields.io/badge/CustomTkinter-GUI-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## 📸 Preview
+
 
 ## 📸 Preview
 
