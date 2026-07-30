@@ -1,60 +1,179 @@
-<<<<<<< HEAD
-# Advanced Scientific Calculator
+# 🧮 Advanced Scientific Calculator
 
-A modern, Windows 11-style scientific calculator built with Python and CustomTkinter.
+A modern **Advanced Scientific Calculator** built with **Python** and **CustomTkinter**, featuring a clean Windows 11-inspired interface with multiple mathematical tools, converters, and calculation history.
 
-## Features
-The app has 5 tabs:
+![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
+![CustomTkinter](https://img.shields.io/badge/CustomTkinter-GUI-green.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-1. **Calculator** — basic + scientific operations (sin, cos, tan, inverse trig, log, ln, sqrt, powers, factorial), constants `pi`/`e`, memory buttons (MC/MR/M+/M-), persistent history panel (click an entry to reuse it), keyboard shortcuts (digits, `+ - * / ( )`, `Enter` to calculate, `Backspace` to delete, `Esc` to clear)
-2. **Graphing** — plot any function of `x` (e.g. `sin(x)`, `x**2 - 3*x + 1`) over a custom x-range
-3. **Converter** — Length, Weight, Volume, Speed, and Temperature unit conversion with a swap button
-4. **Programmer** — live Binary/Octal/Decimal/Hexadecimal conversion, plus bitwise & arithmetic operations (AND, OR, XOR, NOT, shifts, +, -, *, /)
-5. **Percentage & Tip** — quick "X% of Y" calculator, plus a full tip calculator (bill split across people, quick 10/15/18/20/25% buttons)
+## 📸 Preview
 
-Dark / Light / **Cartoon** theme (click the theme button top-right to cycle through all three) applies across all tabs. Cartoon mode adds a playful comic-style look (bold candy colors, thick borders, Comic Sans font) plus fun effects: the result **pops** with a bounce and a **confetti burst** plays every time you hit `=` successfully. Safe expression evaluation is used throughout (no raw `eval()` on user input).
+![calculator CARTOONS PART](cartoons.png)
 
-## Project structure
+---
+
+## ✨ Features
+
+### 🧮 Scientific Calculator
+- Basic arithmetic operations
+- Trigonometric functions
+- Inverse trigonometric functions
+- Hyperbolic functions
+- Logarithms (log, ln)
+- Square root
+- Power functions
+- Factorial
+- Percentage calculations
+- Mathematical constants (π, e)
+
+### 🔢 Number System Converter
+- Decimal ↔ Binary
+- Decimal ↔ Octal
+- Decimal ↔ Hexadecimal
+
+### 📏 Unit Converter
+- Length
+- Weight
+- Temperature
+- Speed
+- Time
+
+### 📜 Calculation History
+- Automatically stores previous calculations
+- Clear history option
+
+### 🎨 Modern User Interface
+- Windows 11 inspired design
+- Light & Dark themes
+- Responsive layout
+- Easy-to-use interface
+
+---
+
+## 📂 Project Structure
+
 ```
 Advanced-Scientific-Calculator/
 │
-├── main.py          # entry point
-├── ui.py            # CustomTkinter UI (all 5 tabs)
-├── calculator.py     # math engine (safe parser/evaluator, supports variables for graphing)
-├── converter.py       # unit conversion logic
-├── baseconv.py        # number base conversion + bitwise ops
-├── history.py        # history load/save/clear
-├── theme.py          # dark/light color palettes
+├── calculator.py
+├── converter.py
+├── baseconv.py
+├── history.py
+├── theme.py
+├── ui.py
+├── main.py
 ├── requirements.txt
 ├── README.md
-└── data/              # created automatically, stores history.json
+├── LICENSE
+└── .gitignore
 ```
 
-## Setup
+---
 
-1. Make sure you have Python 3.9+ installed.
-2. Open this folder in VS Code / terminal.
-3. Install dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
-4. Run the app:
-   ```
-   python main.py
-   ```
+## 🚀 Installation
 
-## Notes
-- The `data/` folder and `history.json` are created automatically on first run — you don't need to create them manually.
-- If you ever see `ModuleNotFoundError`, it almost always means a `.py` file is missing or misnamed in this folder — run `dir` (Windows) or `ls` (Mac/Linux) to confirm all 5 `.py` files listed above are present.
+### Clone the repository
 
-## Building a Windows .exe (optional, next step)
-Once you confirm the app runs correctly with `python main.py`, you can package it as a standalone `.exe`:
+```bash
+git clone https://github.com/srusti-das-git/Advanced-Scientific-Calculator.git
 ```
-pip install pyinstaller
-pyinstaller --onefile --windowed --name "ScientificCalculator" main.py
+
+### Open the project
+
+```bash
+cd Advanced-Scientific-Calculator
 ```
-The executable will appear in the `dist/` folder.
-=======
-# Advanced-Scientific-Calculator
-Here's a version of about **250 characters** (roughly 100 more than the previous one):  **Advanced Scientific Calculator:** A modern desktop calculator built with Python and CustomTkinter, featuring basic and advanced scientific operations, calculation history, memory functions, theme customization, keyboard shortcuts, and a clean, user-friend
->>>>>>> a11de6ad41381525ca1e72422e14802902e6695a
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run the application
+
+```bash
+python main.py
+```
+
+---
+
+## 📦 Requirements
+
+- Python 3.10 or later
+- CustomTkinter
+
+Install manually if needed:
+
+```bash
+pip install customtkinter
+```
+
+---
+
+## 🖥️ Technologies Used
+
+- Python
+- CustomTkinter
+- Tkinter
+- Math Module
+
+---
+
+## 🎯 Future Improvements
+
+- Graph Plotter
+- Matrix Calculator
+- Currency Converter
+- Programmer Calculator
+- Equation Solver
+- Statistics Calculator
+- Scientific Graphs
+- Export History
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository
+2. Create your feature branch
+
+```bash
+git checkout -b feature-name
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Added new feature"
+```
+
+4. Push the branch
+
+```bash
+git push origin feature-name
+```
+
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+See the LICENSE file for more details.
+
+---
+
+## 👨‍💻 Author
+
+Siba Sundar Sahoo
+
+GitHub: https://github.com/sibasundarsahoo08-creator
+
+---
+
+⭐ If you found this project useful, please consider giving it a star.
